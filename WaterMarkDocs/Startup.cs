@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WatermarkService;
 
 namespace WaterMarkDocs
 {
@@ -23,6 +24,7 @@ namespace WaterMarkDocs
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IWaterStampService>(services => new PdfWatermarkStampService());
             services.AddControllersWithViews();
         }
 
