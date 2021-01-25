@@ -1,8 +1,54 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var errmsg = string.Empty;
+    if (ViewData.ContainsKey("errmsg"))
+    {
+        errmsg = ViewData["errmsg"].ToString();
+    }
 }
 
-<div class="text-center">
+@*<div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+<h1>@ViewData["Title"]</h1>
+<div>
+    <p>
+        This simple website will place a text watermark phrase on any pdf you send into it.
+    </p>
+
+</div>
+<div>
+    <form asp-controller="Home" asp-action="Watermark" enctype="multipart/form-data" method="post">
+        <fieldset>
+            <legend>Watermark a PDF file.</legend>
+            <div class="form-group">
+                <label for="phrase">Watermark phrase:</label>
+                <input id="phrase" name="phrase" type="text" />
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="watermarkMode" class="custom-control-input" value="0">
+                    <label class="custom-control-label" for="customRadio1">Watermark on last page only</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="watermarkMode" class="custom-control-input" value="1" checked >
+                    <label class="custom-control-label" for="customRadio2">Watermark on every page</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pdfFile">PDF file path:</label>
+                <input id="pdfFile" name="pdfFile" type="file" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add watermark" class="btn btn-primary" />
+            </div>
+        </fieldset>
+    </form>
+    @if (!string.IsNullOrWhiteSpace(errmsg))
+    {
+        <div class="alert alert-danger" role="alert">
+            @errmsg
+        </div>
+    }
 </div>

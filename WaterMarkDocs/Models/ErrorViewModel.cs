@@ -1,5 +1,3 @@
-using System;
-
 namespace WaterMarkDocs.Models
 {
     public class ErrorViewModel
