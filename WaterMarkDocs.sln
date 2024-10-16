@@ -1,26 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaterMarkDocs", "WaterMarkDocs\WaterMarkDocs.csproj", "{02080F1E-C081-47FF-A2CA-E3F3B253CA73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatermarkService", "WatermarkService\WatermarkService.csproj", "{AB0FCB31-F369-46B6-861F-AC40E6C8821B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WatermarkService", "WatermarkService\WatermarkService.csproj", "{AB0FCB31-F369-46B6-861F-AC40E6C8821B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{02080F1E-C081-47FF-A2CA-E3F3B253CA73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{02080F1E-C081-47FF-A2CA-E3F3B253CA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02080F1E-C081-47FF-A2CA-E3F3B253CA73}.Debug|x86.ActiveCfg = Debug|x86
+		{02080F1E-C081-47FF-A2CA-E3F3B253CA73}.Debug|x86.Build.0 = Debug|x86
 		{02080F1E-C081-47FF-A2CA-E3F3B253CA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02080F1E-C081-47FF-A2CA-E3F3B253CA73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02080F1E-C081-47FF-A2CA-E3F3B253CA73}.Release|x86.ActiveCfg = Release|x86
+		{02080F1E-C081-47FF-A2CA-E3F3B253CA73}.Release|x86.Build.0 = Release|x86
 		{AB0FCB31-F369-46B6-861F-AC40E6C8821B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AB0FCB31-F369-46B6-861F-AC40E6C8821B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0FCB31-F369-46B6-861F-AC40E6C8821B}.Debug|x86.ActiveCfg = Debug|x86
+		{AB0FCB31-F369-46B6-861F-AC40E6C8821B}.Debug|x86.Build.0 = Debug|x86
 		{AB0FCB31-F369-46B6-861F-AC40E6C8821B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB0FCB31-F369-46B6-861F-AC40E6C8821B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0FCB31-F369-46B6-861F-AC40E6C8821B}.Release|x86.ActiveCfg = Release|x86
+		{AB0FCB31-F369-46B6-861F-AC40E6C8821B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
